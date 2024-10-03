@@ -11,9 +11,13 @@ body {
 .header{
     background-image: url("images/banner/banner1.png");
     height: 800px;
+    width: auto;
     background-repeat: no-repeat;
     background-size:  cover;
-    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
 
@@ -29,16 +33,14 @@ section{
 .banner-content{
     text-align: right;
     max-width: 500px;
-    margin-left: 50%;
-    padding-top: 200px;
-    padding-right: 150px;
-    justify-content: space-between;
+    
 }
 
 .banner-title {
     font-size: 65px;
     font-weight: 700;
-    color: #151414
+    color: #151414;
+    text-align: right;
 }
 
 .banner-description{
@@ -98,11 +100,14 @@ section{
     display: flex;
     gap: 100px;
     justify-content: center;
-    align-content: center;
-
+    align-items: center;
 }
+
 .skill{
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .plan-title{
@@ -130,14 +135,21 @@ section{
 .banner-2nd{
     background-image: url(images/gradient2.png), url(images/watch.png);
     height: 300px;
-    width: 1140px;
+    width: auto;
     background-repeat: no-repeat;
     padding: 50px ;
-   justify-content: center;
-    
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    margin: 100px 100px;
     
 }
 
+.banner-container{
+    padding: 0px 100px;
+}
 
 
 .banner-title{
@@ -145,6 +157,8 @@ section{
     font-size: 40px;
     font-weight: 700;
     max-width: 500px;
+    text-align: left;
+    
 }
 
 .button-primary-2{
@@ -156,6 +170,7 @@ section{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    
 }
 
 /* footer items */
